@@ -7,10 +7,11 @@ import time  # Allows waiting for form submission
 
 # Load drivers and website
 driver = webdriver.Chrome()  # Load Chrome
-driver.get("https://nettskjema.no/a/testautofill")  # Load website
+driver.get("https://nettskjema.no/a/testautofill")  # Load website - replace with actual website
 driver.implicitly_wait(0.5)  # Wait for website to load before acting
 
-# Get HTML elements
+# Get HTML elements - replace with actual buttons
+# May need a function to identify which buttons are to be selected, and then select these
 question_1_response_radio = driver.find_element(by=By.ID, value="14011896")  # Get question buttons
 send_button = driver.find_element(by=By.ID, value="submit-form")  # Get submit button
 
